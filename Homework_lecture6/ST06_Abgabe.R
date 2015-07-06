@@ -20,3 +20,11 @@ hist(dice_roll, freq=FALSE)
 C = ecdf(dice_roll)
 C(0.0)
 plot(C)
+
+#normal distribution
+nv <- rnorm(10000, mean=5, sd=10)
+hist(nv)
+
+#Prozentzahl von einem gegebenem Wert
+z <- pnorm(70.9, mean=70, sd=5)
+
